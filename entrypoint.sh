@@ -37,12 +37,12 @@ if [ ! -z "$REPO" ]; then
       git init .
       git remote add origin "$REPO"
       git fetch origin
-      git checkout --force "$BRANCH"
+      git checkout --force "$BRANCH" --recurse-submodules
       git reset --hard "$HASH"
   else
       echo "Upgrading repository ...";
       git fetch origin
-      git checkout --force "$BRANCH"
+      git checkout --force "$BRANCH" --recurse-submodules
       git reset --hard "$HASH"
   fi
 fi
