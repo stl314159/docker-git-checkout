@@ -1,6 +1,6 @@
 # docker-git-checkout
 
-A tiny builder container for pulling source from git.
+A tiny builder container for recursively pulling source from git.
 
 ## Usage
 
